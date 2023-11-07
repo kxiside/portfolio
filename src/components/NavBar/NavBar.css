@@ -1,12 +1,16 @@
 * {
     background-color: black;
+    font-family: Share Tech Mono;
 }
 
 .nav {
     display: flex;
+    font-size: 1.5rem;
     color: white;
+    padding: 2px 8px;
     justify-content: space-around;
     border: solid white;
+    border-width: .3px;
 }
 
 .link {
@@ -15,19 +19,18 @@
     background: 
         linear-gradient(
             to right,
-            black,
-            black
+            rgb(7, 255, 243),
+            rgb(72, 69, 69)
         ),
         linear-gradient(
             to right,
-            rgba(255, 0, 0, 1),
-            rgba(255, 0, 100, 1),
-            rgba(0, 100, 200, 1)
+            rgb(81, 82, 84),
+            rgb(12, 228, 240)
         );
     background-size: 100% 3px, 0 3px;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
-    transition: background-size 400ms;
+    transition: background-size 200ms;
 }
 
 .link:hover {
