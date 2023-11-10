@@ -4,11 +4,11 @@ import './NavBar.css'
 export default function NavBar () {
   return (
     <nav className='nav'>
-      <Link to="/" className='link'>projects</Link>
+      <Link to="/" className='link'>About</Link>
       &nbsp; | &nbsp;
-      <Link to="/About" className='link'>about</Link>
+      <Link to="/projects" className='link'>Projects</Link>
       &nbsp; | &nbsp;
-      <Link to="/Contact" className='link'>contact</Link>
+      <Link to="/Contact" className='link'>Contact</Link>
     </nav>
   );
 }

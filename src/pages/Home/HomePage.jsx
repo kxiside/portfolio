@@ -4,24 +4,29 @@ import ProjectCard from "../../components/ProjectCard"
 import gymgrid from "../../images/gymgridss.png"
 import supersports from "../../images/superss.png"
 import star from "../../images/starss.png"
-import TrackVisibility from 'react-on-screen'
 
 export default function HomePage() {
     const projects = [
         {
           title: "Gym Grid",
-          description: "Python/Django",
-          img: gymgrid
+          style: "Team",
+          description: "Python/Django/CSS/AWS",
+          img: gymgrid,
+          link: "https://gymgrid.onrender.com/"
         },
         {
             title: "SuperSportsUnltd.",
+            style: "Solo",
             description: "HTML5/CSS/Javascript/Node/Express/Mongodb",
-            img: supersports
+            img: supersports,
+            link: "https://supersports.fly.dev/"
         },
         {
             title: "Starsweeper",
+            style: "Solo",
             description: "HTML5/CSS/Javascript",
-            img: star
+            img: star,
+            link: "https://kxiside.github.io/starsweeper/"
         },
         
     ]
@@ -30,14 +35,12 @@ export default function HomePage() {
         <Container>
           <Row>
             <Col size={12}>
-              <TrackVisibility>
-                {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                  <h2>Projects</h2>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <Tab.Container id="projects-tabs" className="container" defaultActiveKey="first">
-                    <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                      <Tab.Pane eventKey="first"d>
+                <div>
+                  <h2>Full Stack Developer</h2>
+                  <p className="project-txt">Welcome to my personnel website! Here you will find my completed work. Feel free to navigate and check out the about me and contact page with my social link.</p>
+                  <Tab.Container className="container">
+                    <Tab.Content>
+                      <Tab.Pane>
                         <Col className="proj">
                           {
                             projects.map((project, index) => {
@@ -54,12 +57,10 @@ export default function HomePage() {
                     </Tab.Content>
                   </Tab.Container>
                 </div>
-                }
-              </TrackVisibility>
             </Col>
           </Row>
         </Container>
-        <img className="background-image-right" ></img>
+        <img className="BG" ></img>
       </section>
     )
 }

@@ -12,9 +12,9 @@ export default function App() {
           <>
             <NavBar />
             <Routes>
-              <Route path="/" element={<HomePage />} />
+              <Route path="/" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
-              <Route path="/about" element={<AboutPage />} />
+              <Route path="/projects" element={<HomePage />} />
             </Routes>
           </>
     </main>

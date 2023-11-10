@@ -1,4 +1,6 @@
-
+* {
+    font-family: Share Tech Mono;
+}
 
 .nav {
     display: flex;
