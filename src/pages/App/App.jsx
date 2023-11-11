@@ -5,6 +5,7 @@ import ContactPage from '../Contact/ContactPage';
 import AboutPage from '../About/AboutPage';
 import HomePage from '../Home/HomePage'
 import NavBar from '../../components/NavBar/NavBar';
+import ParticlesComponent from '../../components/Particles/Particles';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/projects" element={<HomePage />} />
             </Routes>
+            <ParticlesComponent />
           </>
     </main>
   );

@@ -1,7 +1,6 @@
 .project {
     padding: 80px 0;
     position: relative;
-    background-color: black;
   }
   .project h2 {
       font-size: 45px;
@@ -22,6 +21,7 @@
     margin: 14px auto 30px auto;
     text-align: center;
     width: 56%;
+    background-color: black;
   }
   
   .proj-imgbx {
