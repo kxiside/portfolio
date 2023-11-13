@@ -38,7 +38,7 @@ const ParticlesComponent = (props) => {
         },
         links: {
           enable: true, 
-          distance: 50,
+          distance: 100,
         },
         move: {
           enable: true, 

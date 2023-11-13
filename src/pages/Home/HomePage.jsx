@@ -9,24 +9,27 @@ export default function HomePage() {
     const projects = [
         {
           title: "Gym Grid",
-          style: "Team",
+          style: "Team-project",
           description: "Python/Django/CSS/AWS",
           img: gymgrid,
-          link: "https://gymgrid.onrender.com/"
+          siteLink: "https://gymgrid.onrender.com/",
+          gitLink: "https://github.com/kxiside/gym_grid"
         },
         {
             title: "SuperSportsUnltd.",
-            style: "Solo",
+            style: "Solo-project",
             description: "HTML5/CSS/Javascript/Node/Express/Mongodb",
             img: supersports,
-            link: "https://supersports.fly.dev/"
+            siteLink: "https://supersports.fly.dev/",
+            gitLink: "https://github.com/kxiside/SuperSportsUnltd"
         },
         {
             title: "Starsweeper",
-            style: "Solo",
+            style: "Solo-project",
             description: "HTML5/CSS/Javascript",
             img: star,
-            link: "https://kxiside.github.io/starsweeper/"
+            siteLink: "https://kxiside.github.io/starsweeper/",
+            gitLink: "https://github.com/kxiside/starsweeper"
         },
         
     ]
