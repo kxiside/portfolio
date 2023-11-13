@@ -1,5 +1,5 @@
 .project {
-    padding: 80px 0;
+    padding: 60px 0;
     position: relative;
   }
   .project h2 {
@@ -83,4 +83,16 @@
 
   .gitLink {
     
+  }
+
+  .gitImg {
+    width: 50px;
+    
+    border-radius: 50%;
+  }
+
+  .gitImg:hover {
+    background-color: rgb(7, 255, 243);
+    opacity: 88%;
+    transition: 0.4s ease-in-out;
   }

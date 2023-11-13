@@ -1,4 +1,5 @@
 import { Row } from "react-bootstrap";
+import gitLogo from "../images/github-mark.png"
 
 export default function ProjectCard ({ title, style, description, img, siteLink, gitLink }) {
     
@@ -11,7 +12,7 @@ export default function ProjectCard ({ title, style, description, img, siteLink,
               <h4>{title}</h4>
                 <p>{style}</p>
                 <p>{description}</p>
-              <a className="gitLink" href={gitLink}>GitHub Code</a>
+              <a className="gitLink" href={gitLink}><img className="gitImg" src={gitLogo} /></a>
             </div>
           </a>
         </div>
