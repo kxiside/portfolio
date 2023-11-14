@@ -1,10 +1,11 @@
-
+import "./AboutPage.css"
 
 export default function AboutPage() {
   
   return (
-    <>
-      <h1>Kai</h1>
-    </>
+    <div className="container">
+      <section className="Title">Kai</section>
+      <section className="msg">hi</section>
+    </div>
   );
 }
