@@ -4,6 +4,7 @@ import ProjectCard from "../../components/ProjectCard"
 import gymgrid from "../../images/gymgridss.png"
 import supersports from "../../images/superss.png"
 import star from "../../images/starss.png"
+import { animate, motion } from "framer-motion"
 
 export default function HomePage() {
     const projects = [
@@ -31,20 +32,34 @@ export default function HomePage() {
             siteLink: "https://kxiside.github.io/starsweeper/",
             gitLink: "https://github.com/kxiside/starsweeper"
         },
-        
     ]
+
+    const variants = {
+      initial: {
+        y: 500,
+        opacity: 0
+      },
+      animate: {
+        y: 0,
+        opacity: 1,
+        transition: {
+          duration: 0.5,
+          staggerChildren: 0.1,
+        },
+      },
+    }
     return (
-        <section className="project" id="projects">
-        <Container>
-          <Row>
+        <motion.section className="project" id="projects" variants={variants} initial="initial" whileInView="animate">
+        <motion.Container variants={variants}>
+          <motion.Row variants={variants}>
             <Col size={12}>
-                <div>
-                  <h2>Full Stack Developer</h2>
-                  <p className="project-txt">Welcome to my personnel website! Here you will find my completed work. Feel free to navigate and check out the about me and contact page with my social link.</p>
+                <motion.div variants={variants}>
+                  <motion.h2 variants={variants}>Full Stack Developer</motion.h2>
+                  <motion.p className="project-txt" variants={variants}>Welcome to my personnel website! Here you will find my completed work. Feel free to navigate and check out the about me and contact page with my social link.</motion.p>
                   <Tab.Container className="container">
                     <Tab.Content>
                       <Tab.Pane>
-                        <Col className="proj">
+                        <motion.Col className="proj" variants={variants}>
                           {
                             projects.map((project, index) => {
                               return (
@@ -55,15 +70,15 @@ export default function HomePage() {
                               )
                             })
                           }
-                        </Col>
+                        </motion.Col>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
-                </div>
+                </motion.div>
             </Col>
-          </Row>
-        </Container>
+          </motion.Row>
+        </motion.Container>
         <img className="BG" ></img>
-      </section>
+      </motion.section>
     )
 }

@@ -11,7 +11,7 @@ export default function App() {
   return (
     <main className="App">
           <>
-            <NavBar />
+            <NavBar  />
             <Routes>
               <Route path="/" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
