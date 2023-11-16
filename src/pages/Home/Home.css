@@ -1,12 +1,5 @@
 .project {
-    padding: 60px 0;
     position: relative;
-  }
-  .project h2 {
-      font-size: 44px;
-      font-weight: 700;
-    text-align: center;
-    color: whitesmoke;
   }
 
 .style {

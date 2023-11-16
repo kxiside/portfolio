@@ -55,7 +55,6 @@ export default function HomePage() {
           <motion.Row variants={variants}>
             <Col size={12}>
                 <motion.div variants={variants}>
-                  <motion.h2 variants={variants}>Deployed Applications</motion.h2>
                   <motion.p className="project-txt" variants={variants}></motion.p>
                   <Tab.Container className="container">
                     <Tab.Content>

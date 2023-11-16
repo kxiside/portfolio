@@ -42,12 +42,9 @@ export default function AboutPage() {
             )}
           </motion.section>
           <div className="card2">
-          <Link to="/contact">
-              Contact
-          </Link>
-            <a>
-              Projects
-            </a>
+              {/* make a stylish contact and project footer */}
+              <Link to="/projects" className="link">View deployed work</Link>
+              <Link to="/contact" className="link">Contact</Link>
           </div>
         </div>
       </div>
