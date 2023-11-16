@@ -66,13 +66,23 @@
     font-size: 30px;
     font-weight: 700;
     letter-spacing: 0.8px;
-    line-height: 1.1em;
+    line-height: .5em;
+    color: black;
   }
-  .proj-txtx span  {
+
+  .proj-txtx h4:hover {
+    color:  rgb(7, 255, 243);
+    opacity: 66%;
+    transition: 0.5s ease-in-out;
+  }
+
+  .proj-txtx p  {
     font-style: italic;
     font-weight: 400;
-    font-size: 15px;
-    letter-spacing: 0.8px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: black;
+    padding-bottom: 13px;
   }
 
     .proj {
@@ -102,6 +112,6 @@
 
   .gitImg:hover {
     background-color: rgb(7, 255, 243);
-    opacity: 88%;
+    opacity: 66%;
     transition: 0.4s ease-in-out;
   }

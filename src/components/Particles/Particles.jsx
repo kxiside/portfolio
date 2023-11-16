@@ -34,7 +34,7 @@ const ParticlesComponent = (props) => {
       },
       particles: {
         number: {
-            value: 33,
+            value: 22,
         },
         links: {
           enable: true, 
