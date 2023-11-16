@@ -25,7 +25,7 @@ const ParticlesComponent = (props) => {
         },
         modes: {
           push: {
-            quantity: 5, 
+            quantity: 3, 
           },
           repulse: {
             distance: 100, 
@@ -34,7 +34,7 @@ const ParticlesComponent = (props) => {
       },
       particles: {
         number: {
-            value: 50,
+            value: 33,
         },
         links: {
           enable: true, 
@@ -42,13 +42,13 @@ const ParticlesComponent = (props) => {
         },
         move: {
           enable: true, 
-          speed: { min: 1, max: 2 },
+          speed: { min: 1, max: 1 },
         },
         opacity: {
-          value: { min: 0.3, max: 0.7 }, 
+          value: { min: 0.3, max: 0.6 }, 
         },
         size: {
-          value: { min: 1, max: 3 },
+          value: { min: 1, max: 2 },
         },
       },
     };

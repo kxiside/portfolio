@@ -5,6 +5,7 @@ import gymgrid from "../../images/gymgridss.png"
 import supersports from "../../images/superss.png"
 import star from "../../images/starss.png"
 import { animate, motion } from "framer-motion"
+import ParticlesComponent from "../../components/Particles/Particles"
 
 export default function HomePage() {
     const projects = [
@@ -77,8 +78,8 @@ export default function HomePage() {
                 </motion.div>
             </Col>
           </motion.Row>
+          <ParticlesComponent className="particle"/>
         </motion.Container>
-        <img className="BG" ></img>
       </motion.section>
     )
 }

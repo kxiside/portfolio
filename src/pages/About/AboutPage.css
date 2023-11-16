@@ -1,0 +1,90 @@
+.container {
+    background-image: url("../../images/sky.png");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat; 
+    position: relative;
+    display: flex;
+    justify-content: left;
+}
+
+.bg {
+    padding: 77px 0px 0px 0px;
+    display: flex;
+    justify-content: left;
+    padding-left: 50px;
+}
+
+.txt {
+    border-left: solid white;
+    line-height: 0;
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    height: 140px;
+    padding: 0 0 0 20px;
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    opacity: 90%;
+    font-size: 3em; 
+}
+
+h2 {
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    color: whitesmoke;
+    opacity: 80%;
+    font-size: 2em;
+}
+
+.txt p {
+    color: whitesmoke;
+    opacity: 88%;
+}
+
+.title {
+    opacity: 77%;
+}
+
+.container p {
+    padding-top: 80px;
+    padding-left: 65px;
+    width: 700px;
+    line-height: 20px;
+    opacity: 77%;
+}
+
+p {
+    color: whitesmoke;
+}
+
+.react {
+    width: 50px;
+}
+
+.python {
+    width: 50px;
+}
+
+.hjc {
+    width: 150px;
+}
+
+.skills {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:flex-end;
+    flex-wrap: nowrap;
+    padding-top: 80px;
+    padding-left: 300px;
+}
+
