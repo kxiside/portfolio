@@ -55,8 +55,8 @@ export default function HomePage() {
           <motion.Row variants={variants}>
             <Col size={12}>
                 <motion.div variants={variants}>
-                  <motion.h2 variants={variants}>Full Stack Developer</motion.h2>
-                  <motion.p className="project-txt" variants={variants}>Welcome to my personnel website! Here you will find my completed work. Feel free to navigate and check out the about me and contact page with my social link.</motion.p>
+                  <motion.h2 variants={variants}>Deployed Applications</motion.h2>
+                  <motion.p className="project-txt" variants={variants}></motion.p>
                   <Tab.Container className="container">
                     <Tab.Content>
                       <Tab.Pane>

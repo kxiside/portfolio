@@ -6,6 +6,8 @@ import react from "../../images/react.png"
 import python from "../../images/python.png"
 import ParticlesComponent from "../../components/Particles/Particles"
 import { useState } from "react"
+import ContactPage from "../Contact/ContactPage"
+import { Link } from "react-router-dom"
 
 export default function AboutPage() {
   
@@ -29,7 +31,7 @@ export default function AboutPage() {
             <img className="hjc" src={hjc} alt="HTML, Javascript, CSS" />
            </section>
           <motion.section transition={{layout: { duration: 1, type: "spring" } }} layout onClick={() => setOpen(!open)} className="card">
-            <motion.h3 layout="position">click for more</motion.h3>
+            <motion.h3 layout="position">About Me</motion.h3>
             { open && (
             <motion.div className="body">
               <p className="body-txt">
@@ -39,6 +41,14 @@ export default function AboutPage() {
             </motion.div> 
             )}
           </motion.section>
+          <div className="card2">
+          <Link to="/contact">
+              Contact
+          </Link>
+            <a>
+              Projects
+            </a>
+          </div>
         </div>
       </div>
       <ParticlesComponent />

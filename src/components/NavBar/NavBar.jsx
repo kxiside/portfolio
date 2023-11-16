@@ -8,7 +8,7 @@ export default function NavBar () {
       &nbsp; | &nbsp;
       <Link to="/projects" className='link'>Projects</Link>
       &nbsp; | &nbsp;
-      <Link to="/Contact" className='link'>Contact</Link>
+      <Link to="/contact" className='link'>Contact</Link>
     </nav>
   );
 }
