@@ -35,17 +35,15 @@ export default function AboutPage() {
             { open && (
             <motion.div className="body">
               <p className="body-txt">
-                Raised in California with a pursuit of the outdoors has always included technology to document my experiences. Over a decade of videoggaphy experience using Adobe programs as well as professional retail & customer service expertise leaves me adaptable to any type of work enviroment.
-                I graduated at General Assembly in the Software Engineering Immersive to create a solid foundation & learn best practices. 
+                Raised in California with a pursuit of the outdoors I have always included technology to express my lifestyle. Over a decade of videoggaphy experience using Adobe programs as well as professional retail & customer service expertise leaves me adaptable to any type of work enviroment.
+                I graduated at General Assembly in the Software Engineering Immersive to create a solid foundation & learn best practices.
               </p>
+              {/* make a stylish contact and project footer */}
+              <Link to="/projects" className="link2">Deployments</Link>
+              <Link to="/contact" className="link2">Need a website?</Link>
             </motion.div> 
             )}
           </motion.section>
-          <div className="card2">
-              {/* make a stylish contact and project footer */}
-              <Link to="/projects" className="link">View deployed work</Link>
-              <Link to="/contact" className="link">Contact</Link>
-          </div>
         </div>
       </div>
       <ParticlesComponent />
