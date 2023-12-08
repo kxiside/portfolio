@@ -15,16 +15,19 @@ export default function AboutPage() {
 
   return (
     <>
-      <div className="app">
+      <div className="About">
         <div className="bg">
           <section className="txt">
-              <h1>Full Stack Developer</h1>
+              <h1>Software Engineer</h1>
               <p>Name: <span className="title">Kai Swendseid</span></p>
               <p>Location: <span className="title">Los Angeles, CA</span></p>
           </section>
         </div>
+        <br /><br />
         <div className="container">
-           <p className="container-p">Inspired to create & zealous to learn. I'm a well versed developer with a dedication to concise & fluid code. Capable of building fully funcitonal applications in several different languages.</p>
+           <p className="container-p">
+            Welcome to my page! I'm a freelance web developer and IT professional based in Los Angeles. My language/framework skills include HTML5, CSS, Javascript, Python, React, Django, PostgreSQL, AWS, and MongoDB. If you are interested in my services, <br /> please head to the contact page and send me a message!
+           </p>
            <section className="skills">
             <img className="react" src={react} alt="React" />
             <img className="python" src={python} alt="Python" />
@@ -32,11 +35,10 @@ export default function AboutPage() {
            </section>
           <motion.section transition={{layout: { duration: 1, type: "spring" } }} layout onClick={() => setOpen(!open)} className="card">
             <motion.h3 layout="position">About Me</motion.h3>
-            { open && (
+            { open && ( 
             <motion.div className="body">
               <p className="body-txt">
-                Raised in California with a pursuit of the outdoors I have always included technology to express my lifestyle. Over a decade of videoggaphy experience using Adobe programs as well as professional retail & customer service expertise leaves me adaptable to any type of work enviroment.
-                I graduated at General Assembly in the Software Engineering Immersive to create a solid foundation & learn best practices.
+                I'm a Software Engineer with a background in sales and customer service. I have a passion for creating and building things, and I love to work in constructive group settings. I recently graduated from General Assembly's Software Engineering immersive program. This led me into freelance web development, where I'm progressing the skills needed for a  position as a developer. It's exciting to continue learning and growing my skills while working on new projects!
               </p>
               {/* make a stylish contact and project footer */}
               <Link to="/projects" className="link2">Deployments</Link>
@@ -45,8 +47,8 @@ export default function AboutPage() {
             )}
           </motion.section>
         </div>
+        <ParticlesComponent />
       </div>
-      <ParticlesComponent />
     </>
   );
 }

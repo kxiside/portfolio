@@ -1,20 +1,22 @@
+
+
 .container {
-    background-image: url("../../images/sky.png");
+    background-image: url(../../images/sky.png);
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat; 
     position: relative;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: left;
+    align-items: center;
     opacity: 77%;
 }
 
 .bg {
-    padding: 77px 0px 0px 0px;
+    padding: 100px 1px 10px 300px;
     display: flex;
     justify-content: left;
-    padding-left: 50px;
 }
 
 .txt {
@@ -57,11 +59,12 @@ h2 {
 }
 
 .container-p {
-    padding-top: 80px;
+    padding-top: 50px;
     padding-left: 65px;
-    width: 700px;
+    width: 800px;
     line-height: 20px;
     opacity: 77%;
+    text-align: center;
 }
 
 p {
@@ -69,25 +72,26 @@ p {
 }
 
 .react {
-    width: 50px;
+    width: 60px;
 }
 
 .python {
-    width: 50px;
+    width: 66px;
 }
 
 .hjc {
-    width: 150px;
+    width: 200px;
+    padding-bottom: 10px;
 }
 
 .skills {
-    display: inline-block;
+    display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items:flex-end;
+    justify-content: center;
+    align-items: center;
     flex-wrap: nowrap;
-    padding-top: 80px;
-    padding-left: 300px;
+    padding-top: 8px;
+    padding-bottom: 300px;
     opacity: 77%;
 }
 
@@ -95,14 +99,23 @@ p {
     background-color: rgba(245, 245, 245, 0.384);
     width: fit-content;
     height: fit-content; 
-    padding-right: 20px;
-    margin-left: 50px;
-    padding-left:20px;
     display: flex;
     flex-direction:column;
+    justify-content: center;
     align-items: center;
-    font-size: 1.5em;
     border-radius: 10%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 .card:hover {
@@ -173,6 +186,69 @@ Link:hover {
     opacity: 77%;
 }
 
+
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bg {
+        padding: 0;
+    }
+
+    .txt {
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .txt p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .title {
+        padding: 0;
+    }
+
+    /* Additional styles for smaller devices */
+    .card {
+        flex-direction: row;
+        align-items: flex-start;
+        font-size: 1em;
+        border-radius: 5%;
+    }
+
+    .card:hover {
+        background-color: rgba(245, 245, 245, 0.8);
+    }
+
+    .body-txt {
+        width: 100%;
+    }
+
+    .card2 {
+        position: static;
+        bottom: auto;
+        display: block;
+        justify-content: flex-start;
+        width: 100%;
+        font-size: 1.5em;
+        padding-left: 0;
+        opacity: 100%;
+    }
+
+    Link {
+        opacity: 100%;
+    }
+
+    .link2 {
+        margin: 5px 0;
+        opacity: 100%;
+    }
+}
 
 @media screen and (max-width: 1000px) {
     .container {

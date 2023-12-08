@@ -10,9 +10,9 @@ export default function ProjectCard ({ title, style, description, img, siteLink,
           <a href={siteLink}>
             <div className="proj-txtx">
               <h4>{title}</h4>
+              <a className="gitLink" href={gitLink}><img className="gitImg" src={gitLogo} /></a>
                 <p>{style}</p>
                 <p>{description}</p>
-              <a className="gitLink" href={gitLink}><img className="gitImg" src={gitLogo} /></a>
             </div>
           </a>
         </div>

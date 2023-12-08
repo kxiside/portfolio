@@ -45,7 +45,7 @@
 }
 
 /* Style the form submit button */
-.contact-form input[type="submit"] {
+.contact-form button[type="submit"] {
   background-color: #007bff;
   color: #fff;
   padding: 0.5rem 1rem;

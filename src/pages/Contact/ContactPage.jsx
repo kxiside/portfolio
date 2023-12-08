@@ -36,7 +36,7 @@ export default function ContactPage() {
         <input className="contact-input" type="text" placeholder="Name" name="user_name"/>
         <input className="contact-input" type="email" placeholder="Email" name="user_email" />
         <textarea className="contact-input" placeholder="Message" name="message" rows={6} />
-        <button className="contact-btn" type="submit" value="Send">Submit</button>
+        <button className="contact-input" type="submit" value="Send">Submit</button>
       </form>
     </section>
     </>
