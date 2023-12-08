@@ -6,7 +6,7 @@ const ParticlesComponent = (props) => {
   const options = useMemo(() => {
     return {
       background: {
-        color: "#000", 
+        color: "grey", 
       },
       fullScreen: {
         enable: true, 
@@ -45,7 +45,7 @@ const ParticlesComponent = (props) => {
           speed: { min: 1, max: 1 },
         },
         opacity: {
-          value: { min: 0.3, max: 0.6 }, 
+          value: { min: 0.1, max: 0.2 }, 
         },
         size: {
           value: { min: 1, max: 2 },
